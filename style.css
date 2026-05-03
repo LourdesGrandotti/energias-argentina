@@ -1,0 +1,273 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--hero-bg, url('./Gemini_Generated_Image_qsywf7qsywf7qsyw.png'));
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-weight: 800;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card-energy {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    background: #ffffff;
+}
+
+.card-energy:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-weight: 600;
+    color: #0d6efd;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.badge-region {
+    background-color: #e9ecef;
+    color: #495057;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.section-title {
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #0d6efd;
+    border-radius: 2px;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/* Estilos del Mapa y Botones de Filtro */
+#map {
+    height: 70vh;
+    min-height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    /* Para que no se superponga con navbars si existieran */
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.leaflet-popup-content h5 {
+    color: #0d6efd;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.filter-btn {
+    transition: all 0.2s;
+}
+
+.filter-btn.active {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Custom Utilities to replace inline styles */
+.navbar-brand-custom {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.hero-crecimiento {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+}
+
+.hero-mapa {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://i.pinimg.com/originals/93/32/ca/9332cab5d62e5aa72c14ceee9dba9b4c.jpg');
+}
+
+.title-shadow {
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle-shadow {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.text-left-important {
+    text-align: left !important;
+}
+
+.source-box {
+    font-size: 0.9rem;
+    border-left: 4px solid #0d6efd;
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+.source-box.secondary {
+    border-left-color: #6c757d;
+}
+
+/* Logo Cloud Section - Ticker Animation */
+.section-logos {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-radius: 10px;
+}
+
+.n-ticker {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.n-ticker-content {
+    display: flex;
+    width: max-content;
+    animation: scroll-x 50s linear infinite;
+}
+
+.n-ticker-content:hover {
+    animation-play-state: paused;
+}
+
+.ticker-group {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding-right: 4rem; /* Debe ser igual al gap para evitar saltos en la animación */
+}
+
+@keyframes scroll-x {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-25%); /* Se ajusta a 25% porque ahora hay 4 grupos de logos */
+    }
+}
+
+.logo-cloud-item {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #adb5bd;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: default;
+    white-space: nowrap;
+}
+
+.logo-cloud-item:hover {
+    color: #0d6efd;
+    transform: scale(1.05);
+}
+
+/* Modo Oscuro Manual (Controlado por JavaScript y Bootstrap) */
+[data-bs-theme="dark"] body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Tarjetas y Contenedores */
+[data-bs-theme="dark"] .card-energy,
+[data-bs-theme="dark"] .card,
+[data-bs-theme="dark"] .bg-white,
+[data-bs-theme="dark"] .source-box,
+[data-bs-theme="dark"] .section-logos {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+    border-color: #333 !important;
+}
+
+/* Sombras para fondos oscuros */
+[data-bs-theme="dark"] .card-energy:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+[data-bs-theme="dark"] #map {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Textos y Títulos */
+[data-bs-theme="dark"] .card-title {
+    color: #6ea8fe;
+    /* Azul más claro para que resalte en el fondo oscuro */
+}
+
+[data-bs-theme="dark"] .section-title {
+    color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] .text-muted {
+    color: #adb5bd !important;
+}
+
+/* Elementos pequeños */
+[data-bs-theme="dark"] .badge-region {
+    background-color: #2b2b2b;
+    color: #adb5bd;
+}

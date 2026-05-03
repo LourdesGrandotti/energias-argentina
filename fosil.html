@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidrocarburos Fósiles - Argentina</title>
+    <!-- Favicon de Energía -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-custom" href="index.html">⚡ Energía.AR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Dropdown Inicio -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Inicio
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">Página Principal</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">Fuentes de Energía</h6></li>
+                            <li><a class="dropdown-item" href="solar.html">☀️ Solar</a></li>
+                            <li><a class="dropdown-item" href="eolica.html">💨 Eólica</a></li>
+                            <li><a class="dropdown-item" href="hidroelectrica.html">💧 Hidroeléctrica</a></li>
+                            <li><a class="dropdown-item" href="fosil.html">🛢️ Fósil</a></li>
+                            <li><a class="dropdown-item" href="nuclear.html">☢️ Nuclear</a></li>
+                            <li><a class="dropdown-item" href="biogas.html">🌱 Biogás</a></li>
+                            <li><a class="dropdown-item" href="biomasa.html">🪵 Biomasa</a></li>
+                            <li><a class="dropdown-item" href="termica.html">🔥 Térmica</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mapa.html">Mapa Interactivo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="crecimiento.html">Crecimiento Energético</a>
+                    </li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-outline-light ms-lg-3 mt-2 mt-lg-0" style="border-radius: 50%; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center;" title="Cambiar tema">🌙</button>
+            </div>
+        </div>
+    </nav>
+    <header class="hero" style="--hero-bg: url('https://www.meer.com/attachments/13cc81024b847d4f07fca4d979b5c01c68c66a11/store/fill/1090/613/658deea8f9e57b0978d54768fb68e37815052b9c90efcd08b1debbc8096e/Yacimiento-petrolifero-Vaca-Muerta-provincia-de-Neuquen-Argentina.jpg')">
+        <div class="container px-4">
+            <h1 class="display-4 font-weight-bold">Hidrocarburos Fósiles</h1>
+            <p class="lead">Yacimientos y Empresas en Argentina</p>
+        </div>
+    </header>
+    <main class="container py-5 my-4">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title text-primary font-weight-bold">Vaca Muerta (Cuenca Neuquina)</h3>
+                        <h5 class="text-secondary mb-3">Ubicación: Provincia de Neuquén, Mendoza, Río Negro, La Pampa</h5>
+                        <p class="card-text"><strong>Empresa:</strong> YPF, Tecpetrol, Shell, Pan American Energy (PAE), Chevron, Vista, entre otras.</p>
+                        <p class="card-text">Es una de las principales formaciones de recursos no convencionales (shale gas y shale oil) a nivel mundial. Su desarrollo es la clave actual para la soberanía energética del país y su enorme potencial exportador.</p>
+                        <a href="https://www.google.com/maps/search/Vaca+Muerta,+Neuquen" target="_blank" class="btn btn-outline-secondary mt-auto align-self-start">Ver Mapa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title text-primary font-weight-bold">Cuenca del Golfo San Jorge</h3>
+                        <h5 class="text-secondary mb-3">Ubicación: Chubut y norte de Santa Cruz</h5>
+                        <p class="card-text"><strong>Empresa:</strong> YPF, Pan American Energy (PAE), CAPSA.</p>
+                        <p class="card-text">La cuenca petrolera más antigua y productiva del país en términos históricos (producción convencional). Cerro Dragón, operado por PAE, es uno de los yacimientos petrolíferos más grandes y vitales de Argentina.</p>
+                        <a href="https://www.google.com/maps/search/Cuenca+Golfo+San+Jorge,+Chubut" target="_blank" class="btn btn-outline-secondary mt-auto align-self-start">Ver Mapa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title text-primary font-weight-bold">Cuenca Austral</h3>
+                        <h5 class="text-secondary mb-3">Ubicación: Santa Cruz y Tierra del Fuego</h5>
+                        <p class="card-text"><strong>Empresa:</strong> TotalEnergies, CGC, YPF, Wintershall Dea.</p>
+                        <p class="card-text">Una cuenca con fuerte perfil gasífero, destacándose fuertemente la producción offshore (costa afuera) liderada por el consorcio de TotalEnergies frente a la costa de la provincia de Tierra del Fuego.</p>
+                        <a href="https://www.google.com/maps/search/Cuenca+Austral,+Tierra+del+Fuego" target="_blank" class="btn btn-outline-secondary mt-auto align-self-start">Ver Mapa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title text-primary font-weight-bold">Cuenca Cuyana</h3>
+                        <h5 class="text-secondary mb-3">Ubicación: Provincia de Mendoza</h5>
+                        <p class="card-text"><strong>Empresa:</strong> YPF, Pluspetrol.</p>
+                        <p class="card-text">Es una de las cuencas productoras de petróleo crudo pesado más importantes del país, con refinación local en el Complejo Industrial Luján de Cuyo, abasteciendo a la región centro y norte.</p>
+                        <a href="https://www.google.com/maps/search/Lujan+de+Cuyo,+Mendoza" target="_blank" class="btn btn-outline-secondary mt-auto align-self-start">Ver Mapa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p class="mb-0">Página Web sobre Energías - 2026</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

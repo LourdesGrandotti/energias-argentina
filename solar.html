@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energía Solar - Argentina</title>
+    <!-- Favicon de Energía -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-custom" href="index.html">⚡ Energía.AR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Dropdown Inicio -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Inicio
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">Página Principal</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">Fuentes de Energía</h6></li>
+                            <li><a class="dropdown-item" href="solar.html">☀️ Solar</a></li>
+                            <li><a class="dropdown-item" href="eolica.html">💨 Eólica</a></li>
+                            <li><a class="dropdown-item" href="hidroelectrica.html">💧 Hidroeléctrica</a></li>
+                            <li><a class="dropdown-item" href="fosil.html">🛢️ Fósil</a></li>
+                            <li><a class="dropdown-item" href="nuclear.html">☢️ Nuclear</a></li>
+                            <li><a class="dropdown-item" href="biogas.html">🌱 Biogás</a></li>
+                            <li><a class="dropdown-item" href="biomasa.html">🪵 Biomasa</a></li>
+                            <li><a class="dropdown-item" href="termica.html">🔥 Térmica</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mapa.html">Mapa Interactivo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="crecimiento.html">Crecimiento Energético</a>
+                    </li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-outline-light ms-lg-3 mt-2 mt-lg-0" style="border-radius: 50%; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center;" title="Cambiar tema">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" style="--hero-bg: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+        <div class="container px-4">
+            <h1 class="display-4 font-weight-bold">Energía Solar</h1>
+            <p class="lead">Parques y Empresas en Argentina</p>
+        </div>
+    </header>
+
+    <main class="container py-5 my-4">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title text-primary font-weight-bold">Parque Solar Cauchari</h3>
+                        <h5 class="text-secondary mb-3">Ubicación: Puna Jujeña, Provincia de Jujuy</h5>
+                        <p class="card-text"><strong>Empresa:</strong> JEMSE (Jujuy Energía y Minería Sociedad del
+                            Estado) en conjunto con PowerChina y Shanghai Electric.</p>
+                        <p class="card-text">Es uno de los parques solares más grandes de Sudamérica, con una capacidad
+                            instalada de 300 MW. Se encuentra a más de 4000 metros sobre el nivel del mar, aprovechando
+                            uno de los índices de radiación solar más altos del mundo.</p>
+                        <a href="https://www.google.com/maps/search/Parque+Solar+Cauchari,+Jujuy" target="_blank"
+                            class="btn btn-outline-secondary mt-auto align-self-start">Ver Mapa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title text-primary font-weight-bold">Parque Solar San Juan I y II</h3>
+                        <h5 class="text-secondary mb-3">Ubicación: Ullum, Provincia de San Juan</h5>
+                        <p class="card-text"><strong>Empresa:</strong> EPSE (Energía Provincial Sociedad del Estado) y
+                            empresas privadas.</p>
+                        <p class="card-text">San Juan es una de las provincias pioneras en energía solar. Estos parques
+                            forman parte de un plan integral para desarrollar la energía fotovoltaica en la región,
+                            aprovechando los más de 300 días de sol al año.</p>
+                        <a href="https://www.google.com/maps/search/Parque+Solar+San+Juan,+Ullum" target="_blank" class="btn btn-outline-secondary mt-auto align-self-start">Ver Mapa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title text-primary font-weight-bold">Parque Solar Nonogasta</h3>
+                        <h5 class="text-secondary mb-3">Ubicación: Nonogasta, Provincia de La Rioja</h5>
+                        <p class="card-text"><strong>Empresa:</strong> 360Energy.</p>
+                        <p class="card-text">Con una potencia instalada de 35 MW, este parque es fundamental para el
+                            abastecimiento energético de la región de Cuyo. Cuenta con más de 130.000 paneles solares.
+                        </p>
+                        <a href="https://www.google.com/maps/search/Parque+Solar+Nonogasta,+La+Rioja" target="_blank" class="btn btn-outline-secondary mt-auto align-self-start">Ver Mapa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title text-primary font-weight-bold">Parque Solar Zonda</h3>
+                        <h5 class="text-secondary mb-3">Ubicación: Bella Vista, Provincia de San Juan</h5>
+                        <p class="card-text"><strong>Empresa:</strong> YPF Luz.</p>
+                        <p class="card-text">Primer parque solar de YPF Luz, que en su primera etapa generará energía
+                            equivalente al consumo de más de 70.000 hogares, contribuyendo de manera importante a la
+                            reducción de emisiones.</p>
+                        <a href="https://www.google.com/maps/search/Parque+Solar+Zonda,+San+Juan" target="_blank" class="btn btn-outline-secondary mt-auto align-self-start">Ver Mapa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p class="mb-0">Página Web sobre Energías - 2026</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
