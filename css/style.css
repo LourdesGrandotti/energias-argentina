@@ -61,16 +61,7 @@ body {
     font-size: 1.5rem;
 }
 
-.badge-region {
-    background-color: #e9ecef;
-    color: #495057;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    margin-bottom: 1rem;
-    display: inline-block;
-}
+
 
 .section-title {
     font-weight: 800;
@@ -154,9 +145,7 @@ footer {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-.text-left-important {
-    text-align: left !important;
-}
+
 
 .source-box {
     font-size: 0.9rem;
@@ -268,9 +257,4 @@ footer {
 [data-bs-theme="dark"] .text-muted {
     color: #adb5bd !important;
 }
-
-/* Elementos pequeños */
-[data-bs-theme="dark"] .badge-region {
-    background-color: #2b2b2b;
-    color: #adb5bd;
-}
+
