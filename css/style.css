@@ -5,7 +5,7 @@ body {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--hero-bg, url('./Gemini_Generated_Image_qsywf7qsywf7qsyw.png'));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--hero-bg, url('../assets/Gemini_Generated_Image_qsywf7qsywf7qsyw.png'));
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -200,15 +200,18 @@ footer {
     display: flex;
     align-items: center;
     gap: 4rem;
-    padding-right: 4rem; /* Debe ser igual al gap para evitar saltos en la animación */
+    padding-right: 4rem;
+    /* Debe ser igual al gap para evitar saltos en la animación */
 }
 
 @keyframes scroll-x {
     from {
         transform: translateX(0);
     }
+
     to {
-        transform: translateX(-25%); /* Se ajusta a 25% porque ahora hay 4 grupos de logos */
+        transform: translateX(-25%);
+        /* Se ajusta a 25% porque ahora hay 4 grupos de logos */
     }
 }
 
